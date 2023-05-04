@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Link Shortener</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Link Shortener</h1>
+      <form onsubmit="event.preventDefault(); shortenLink();">
+        <label for="original-link">Enter your link:</label>
+        <input type="text" id="original-link" placeholder="https://www.example.com" required>
+        <button type="submit">Shorten</button>
+      </form>
+      <div id="shortened-link" class="hidden">
+        <div id="shortened-link-text"></div>
+        <button id="copy-button" class="hidden" onclick="copyLink()">Copy Link</button>
+      </div>
+    </div>
+    <footer><p> Made By Soumyadeep Saha</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
